@@ -1,8 +1,8 @@
 {
   "party": "The Kernel Party",
-  "version": "2026.1",
-  "slogan": "Rewrite, Don't Patch.",
-  "philosophy": "Pragmatic Structuralism",
+  "version": "2026.2",
+  "slogan": "Zero Foul Play. Zero Latency.",
+  "philosophy": "The Iron Garden (Roh Idealism x LKY Efficiency)",
   "platform": [
     {
       "id": "algo_transparency",
