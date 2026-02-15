@@ -1,8 +1,8 @@
 {
   "party": "The Kernel Party",
-  "version": "2026.3",
+  "version": "2026.4",
   "slogan": "Zero Foul Play. Zero Latency. Speak Softly, Code Hard.",
-  "philosophy": "Tri-Kernel: Roh (Idealism) x LKY (Pragmatism) x Roosevelt (Action)",
+  "philosophy": "Quad-Kernel: Roh x LKY x Roosevelt x Franklin",
   "platform": [
     {
       "id": "algo_transparency",
@@ -23,6 +23,11 @@
       "id": "immutable_records",
       "name": "Immutable Records Act",
       "demand": "Hash government records to a public ledger. No silent edits."
+    },
+    {
+      "id": "open_diplomacy",
+      "name": "Open Source Diplomacy (Franklin Protocol)",
+      "demand": "Scientific and cultural networking (The Junto) to bypass gatekeepers."
     }
   ],
   "genesis_block": {
