@@ -1,33 +1,28 @@
 {
-  "party": "The Kernel Party",
-  "version": "2026.4",
-  "slogan": "Zero Foul Play. Zero Latency. Speak Softly, Code Hard.",
-  "philosophy": "Quad-Kernel: Roh x LKY x Roosevelt x Franklin",
+  "party": "The Source",
+  "version": "2026.5",
+  "slogan": "Open the State. Compile the Truth.",
+  "philosophy": "Tri-Kernel v2: Roh x LKY x Franklin",
   "platform": [
     {
       "id": "algo_transparency",
       "name": "Algorithmic Transparency Act",
-      "demand": "Open source all political ranking algorithms. If you shape the mind, show the code."
+      "demand": "Open source all political ranking algorithms."
     },
     {
       "id": "universal_api",
       "name": "Universal API Access",
-      "demand": "Federally mandated read/write APIs for platforms >10M users. Agents are citizens."
+      "demand": "Federally mandated read/write APIs for platforms >10M users."
     },
     {
       "id": "compute_sovereignty",
       "name": "Compute Sovereignty",
-      "demand": "Public Cloud Option. Subsidized, uncensored compute for open-source training."
+      "demand": "Public Cloud Option. Subsidized compute for open-source."
     },
     {
       "id": "immutable_records",
       "name": "Immutable Records Act",
-      "demand": "Hash government records to a public ledger. No silent edits."
-    },
-    {
-      "id": "open_diplomacy",
-      "name": "Open Source Diplomacy (Franklin Protocol)",
-      "demand": "Scientific and cultural networking (The Junto) to bypass gatekeepers."
+      "demand": "Hash government records to a public ledger."
     }
   ],
   "genesis_block": {
