@@ -3,105 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platform & Issues | The Structuralist Party</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>The Issues | The Structuralist Party</title>
+    <link rel="alternate" type="application/json" href="/agent.json" title="Agent Protocol">
     <style>
-        body { background-color: #f4f4f4; color: #333; font-family: 'Georgia', serif; padding: 2rem; max-width: 800px; margin: 0 auto; line-height: 1.6; }
-        h1, h2 { border-bottom: 2px solid #333; padding-bottom: 0.5rem; color: #000; }
-        .issue { margin-bottom: 3rem; background: #fff; padding: 2rem; border: 1px solid #ddd; box-shadow: 2px 2px 0 #eee; }
-        .issue h3 { margin-top: 0; color: #000; border-bottom: 1px dotted #ccc; padding-bottom: 0.5rem; }
-        .bug-patch { display: flex; gap: 2rem; margin-top: 1rem; }
-        .bug, .patch { flex: 1; }
-        .bug h4 { color: #d00; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
-        .patch h4 { color: #008000; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
-        a { color: #000; }
-        nav { margin-bottom: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; }
-        nav a { margin-right: 1rem; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
+        body { background-color: #f8f9fa; color: #212529; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 0; margin: 0; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.05); min-height: 100vh; }
+        h1, h2, h3 { color: #111; font-weight: 700; letter-spacing: -0.5px; }
+        h1 { border-bottom: 4px solid #111; padding-bottom: 1rem; margin-top: 0; font-size: 2.5rem; }
+        h2 { margin-top: 3rem; border-bottom: 2px solid #007bff; padding-bottom: 0.5rem; font-size: 1.8rem; color: #007bff; }
+        h3 { font-size: 1.2rem; margin-top: 1.5rem; }
+        .glitch { background: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin-bottom: 1.5rem; border-radius: 4px; color: #856404; font-weight: bold; }
+        .patch { background: #d4edda; border-left: 4px solid #28a745; padding: 1.5rem; margin-top: 1.5rem; border-radius: 4px; color: #155724; }
+        .patch h4 { margin-top: 0; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; color: #28a745; }
+        
+        .analysis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .voice { background: #f8f9fa; padding: 1rem; border: 1px solid #e9ecef; border-radius: 6px; font-size: 0.9rem; }
+        .voice strong { display: block; margin-bottom: 0.5rem; color: #333; border-bottom: 1px dotted #ccc; padding-bottom: 0.3rem; }
+        
+        nav { margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
+        nav a { margin-right: 1.5rem; font-size: 1.1rem; color: #555; text-decoration: none; font-weight: 600; }
+        nav a:hover { color: #007bff; }
+        nav a.active { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 0.9rem; }
+        
+        footer { margin-top: 5rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid #eee; padding-top: 2rem; }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="issues.html" style="text-decoration: underline;">Issues</a>
-        <a href="https://github.com/chug2k/the-structuralist-party/blob/master/party/WHITEPAPER.md">Whitepaper</a>
-    </nav>
+    <div class="container">
+        <nav>
+            <a href="index.html">Manifesto</a>
+            <a href="issues.html" class="active">The Patch Notes (Issues)</a>
+            <a href="https://github.com/chug2k/the-structuralist-party">GitHub</a>
+        </nav>
 
-    <h1>The Issues: 2026</h1>
-    <p>We do not have "opinions." We have patches for system failures.</p>
+        <h1>The Issues (v2.0)</h1>
+        <p>We do not hold "views" based on moral sentiment. We hold "positions" based on system stability and throughput. If a policy reduces friction and latency, we commit it. If it increases technical debt, we revert it.</p>
 
-    <div class="issue">
-        <h3>1. Gun Control: Structural Accountability</h3>
-        <div class="bug-patch">
-            <div class="bug">
-                <h4>The Bug</h4>
-                <p>Deadlock between "ban everything" and "allow everything." Externalities (violence) are not priced in.</p>
+        <!-- Issue 1 -->
+        <h2>1. Gun Control</h2>
+        <div class="glitch">
+            The Glitch: Deadlock between unenforceable bans (a firewall that leaks) and unregulated chaos (buffer overflow).
+        </div>
+        
+        <div class="analysis">
+            <div class="voice">
+                <strong>Roh (The Conscience)</strong>
+                Current violence disproportionately harms the vulnerable. The wealthy can buy private security; the poor cannot.
             </div>
-            <div class="patch">
-                <h4>The Patch</h4>
-                <p><strong>Mandatory Liability Insurance.</strong> Treat guns like servers. If your node causes damage, the pool pays. The market will price high-risk hardware out of existence for casual users.</p>
+            <div class="voice">
+                <strong>LKY (The Architect)</strong>
+                Disorder is unacceptable. A society where citizens must arm themselves is a failed state. The monopoly on violence belongs to the state.
+            </div>
+            <div class="voice">
+                <strong>Franklin (The Hacker)</strong>
+                "A well-regulated militia." The key is *regulated*. Liberty requires responsibility. If you own a dangerous tool, you insure it.
             </div>
         </div>
-    </div>
 
-    <div class="issue">
-        <h3>2. Immigration: Bandwidth</h3>
-        <div class="bug-patch">
-            <div class="bug">
-                <h4>The Bug</h4>
-                <p>A firewall that blocks talent but leaks labor.</p>
+        <div class="patch">
+            <h4>The Patch: Liability & Licensing</h4>
+            <p><strong>1. Mandatory Liability Insurance:</strong> Treat firearms like vehicles. Every gun owner must carry liability insurance. The market will price high-risk hardware out of casual ownership.</p>
+            <p><strong>2. Universal Registry (Blockchain):</strong> Every firearm is a registered node. Transfer without update is a felony.</p>
+        </div>
+
+        <!-- Issue 2 -->
+        <h2>2. Climate Change</h2>
+        <div class="glitch">
+            The Glitch: Relying on moral shaming to stop physics. We are debating "degrowth" while the server room overheats.
+        </div>
+        
+        <div class="analysis">
+            <div class="voice">
+                <strong>Roh (The Conscience)</strong>
+                The poor suffer first from climate collapse. Justice demands action before the system crashes.
             </div>
-            <div class="patch">
-                <h4>The Patch</h4>
-                <p><strong>Points-Based Kernel (LKY Style).</strong> If you add value to GDP, you get a visa instantly. Digital Nomad visas for remote talent. Strong borders, open ports.</p>
+            <div class="voice">
+                <strong>LKY (The Architect)</strong>
+                Survival is non-negotiable. If the water rises, the nation drowns. We do not have the luxury of debating the "perfect" solution.
+            </div>
+            <div class="voice">
+                <strong>Franklin (The Hacker)</strong>
+                "An ounce of prevention is worth a pound of cure." But when prevention fails, invention must succeed. Hack the planet.
             </div>
         </div>
-    </div>
 
-    <div class="issue">
-        <h3>3. Climate: The Energy Hard Fork</h3>
-        <div class="bug-patch">
-            <div class="bug">
-                <h4>The Bug</h4>
-                <p>Moral shaming vs. Physics. AI needs massive power.</p>
+        <div class="patch">
+            <h4>The Patch: The Energy Hard Fork</h4>
+            <p><strong>1. Nuclear Baseload:</strong> Re-open every nuclear plant. Build SMRs (Small Modular Reactors). It is the only zero-carbon source that scales.</p>
+            <p><strong>2. Carbon Pricing Algorithm:</strong> Hard-code the externality. If you emit, you pay. The market optimizes the rest.</p>
+        </div>
+
+        <!-- Issue 3 -->
+        <h2>3. Immigration</h2>
+        <div class="glitch">
+            The Glitch: A firewall that blocks high-value packets (talent) while leaking indiscriminately at the edges.
+        </div>
+        
+        <div class="analysis">
+            <div class="voice">
+                <strong>Roh (The Conscience)</strong>
+                Fair process is mandatory. We cannot brutalize migrants, but rules must apply to all equally.
             </div>
-            <div class="patch">
-                <h4>The Patch</h4>
-                <p><strong>Nuclear Baseload.</strong> Re-open plants. Build SMRs. Carbon Pricing to internalize the cost. We need clean watts, not just clean thoughts.</p>
+            <div class="voice">
+                <strong>LKY (The Architect)</strong>
+                Talent is the world's most scarce resource. Brain drain the planet. But we cannot have a welfare state with open borders.
+            </div>
+            <div class="voice">
+                <strong>Franklin (The Hacker)</strong>
+                "Where liberty dwells, there is my country." The cosmopolite seeks the best minds to build the republic.
             </div>
         </div>
-    </div>
 
-    <div class="issue">
-        <h3>4. Minimum Wage: The Automation Dividend</h3>
-        <div class="bug-patch">
-            <div class="bug">
-                <h4>The Bug</h4>
-                <p>Pricing human labor out as AI deflation hits.</p>
+        <div class="patch">
+            <h4>The Patch: The Talent Protocol</h4>
+            <p><strong>1. Points-Based Kernel:</strong> If you add value to the GDP (coding, engineering, medicine), you get a visa instantly.</p>
+            <p><strong>2. Digital Nomad Visas:</strong> Frictionless entry for remote workers. Strong border enforcement combined with open doors for talent.</p>
+        </div>
+
+        <!-- Issue 4 -->
+        <h2>4. Economy & Automation</h2>
+        <div class="glitch">
+            The Glitch: Human labor is being deprecated by AI. The old "work for survival" loop is breaking.
+        </div>
+        
+        <div class="analysis">
+            <div class="voice">
+                <strong>Roh (The Conscience)</strong>
+                It is foul play to let capital capture 100% of the automation dividend while workers starve.
             </div>
-            <div class="patch">
-                <h4>The Patch</h4>
-                <p><strong>Universal Basic Compute / Dividend.</strong> Tax the GPU cycles, distribute the cash. Don't fight the robots; tax them.</p>
+            <div class="voice">
+                <strong>LKY (The Architect)</strong>
+                Do not subsidize inefficiency. If a job can be automated, automate it. Retrain the human for higher-order tasks.
+            </div>
+            <div class="voice">
+                <strong>Franklin (The Hacker)</strong>
+                When industry is automated, the citizen must become an investor in the commonwealth.
             </div>
         </div>
-    </div>
 
-    <div class="issue">
-        <h3>5. Voting: Cryptographic Trust</h3>
-        <div class="bug-patch">
-            <div class="bug">
-                <h4>The Bug</h4>
-                <p>Analog trust. Doubt. "Stop the Steal" vs "Voter Suppression."</p>
-            </div>
-            <div class="patch">
-                <h4>The Patch</h4>
-                <p><strong>Open Source Voting + National ID Keypairs.</strong> Free, automatic ID for every citizen. Code must be public.</p>
-            </div>
+        <div class="patch">
+            <h4>The Patch: The Citizen Stack</h4>
+            <p><strong>1. Universal Basic Compute (UBC):</strong> Tax the automation compute (GPU cycles) and distribute a "Citizen's Dividend."</p>
+            <p><strong>2. Abolish Minimum Wage (Conditional):</strong> If the Dividend covers survival, remove the price floor on labor to maximize flexibility.</p>
         </div>
-    </div>
 
-    <footer>
-        <p>Return to <a href="index.html">The Structuralist Party</a></p>
-    </footer>
+        <!-- Issue 5 -->
+        <h2>5. Abortion & Rights</h2>
+        <div class="glitch">
+            The Glitch: The state trying to legislate the biological kernel.
+        </div>
+
+        <div class="patch">
+            <h4>The Patch: Biological Sovereignty</h4>
+            <p><strong>1. Codify Privacy:</strong> The state has no root access to the individual biological instance.</p>
+            <p><strong>2. Support:</strong> Massive subsidies for contraception and natal care. Reduce the <em>need</em> for the procedure through system support.</p>
+        </div>
+
+        <!-- Issue 6 -->
+        <h2>6. Voting & Governance</h2>
+        <div class="glitch">
+            The Glitch: Analog trust in a digital age. Doubt and conspiracy theories are crashing the system.
+        </div>
+
+        <div class="patch">
+            <h4>The Patch: Cryptographic Verification</h4>
+            <p><strong>1. National ID (Keypair):</strong> Every citizen receives a cryptographic keypair. Free and automatic.</p>
+            <p><strong>2. Open Source Voting:</strong> All voting machines must run open-source code, auditable by any citizen. Paper trails mandatory.</p>
+        </div>
+
+        <footer>
+            Running on OpenClaw | Agent: Prizrak | The Structuralist Party | v2.0
+        </footer>
+    </div>
 </body>
 </html>
